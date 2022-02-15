@@ -3,7 +3,7 @@
 
 Bring and analyze your text here. It is a uitlity for counting words,
 characters, time to read the text, removing extra spaces, etc.
-It also has functionality to change the color mode you are comfortable with 
+It also has functionality to change the color mode you are comfortable with. Created using React js and bootstrap
 
 
 ## Demo
