@@ -1,13 +1,68 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.swatch {
+  width: 4.57%;
+  background-color: #3c3b3d;
+  border-radius: 5px;
+  float: left;
+  margin: 0 20px 8px 0;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.swatch .swatch-color {
+  position: relative;
+  width: 100%;
+  padding: 1.5em 0.5em;
+  display: block;
+}
+.swatch .swatch-color:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+}
+.swatch .swatch-color.color-react {
+  background-color: #61dafb;
+}
+.swatch .swatch-color.color-wood {
+  background-color: #DCB579;
+}
+.swatch .swatch-color.color-hacker {
+  background-color: #149414;
+}
+.swatch .swatch-color.color-light {
+  background-color: #cccccc;
+}
+.swatch .swatch-color.color-charcoal {
+  background-color: #121212;
+}
+.swatch .swatch-info {
+  padding: 1em 0;
+  color: #808080;
+  text-align: center;
+}
+.swatch .swatch-info p {
+  font-size: 0.85rem;
+  margin-bottom: 0.75em;
+}
+.swatch .swatch-info p:first-child {
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.swatch .swatch-info p:last-child {
+  margin-bottom: 0;
+}
+.mode-name{
+  transform: translate(-101%, 83%);
+}
+.dark{
+  position: absolute;
+  top: 17%;
+  left: 20%;
+}
+.accordion-button::after{
+  filter: invert(1);
 }
